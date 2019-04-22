@@ -1,0 +1,127 @@
+<html>
+
+
+<head>
+    <script>
+        function validate() {
+
+
+            var uid = document.getElementById("uid").value;
+            var pwd = document.getElementById("pwd").value;
+            var eid = document.getElementById("eid").value;
+            var mob = document.getElementById("mob").value;
+            var regx = /[a-zA-Z0-9]+@[a-z]+\.[a-z]/;
+            var regx1 = /[a-zA-Z]/;
+            var regx2 = /[^0-6]d{9}/
+            var regx3 = /[a-zA-Z0-9]/;
+
+
+            if (regx1.test(uid)) {
+                //return true;
+            }
+
+            else  {
+                alert("please enter valid uid");
+                return false;
+            }
+
+
+            if (regx3.test(pwd)) {
+               // return true;
+            }
+
+            else {
+                alert("please enter valid password");
+                return false;
+            }
+
+            if (regx.test(eid)) {
+                //return true;
+            }
+
+            else {
+                alert("please enter valid email id");
+                return false;
+            }
+
+
+        
+        if (regx2.test(mob)) {
+            //return true;
+        }
+
+        else {
+            alert("please enter valid mobile no");
+            document.getElementById("mob").style.borderColor = "red";
+            return false;
+        }
+
+
+        if (uid.value == "" || pwd.value == "" || eid.value == "" || mob.value == "") {
+            alert("please fill all the information");
+            return false;
+        }
+        return true;
+
+        }
+    </script>
+
+    <style>
+        validate {
+            margin-left: 70px;
+            font-weight: bold;
+            float: left;
+            clear: left;
+            width: 100px;
+            text-align: left;
+            margin-right: 10px;
+            font-family: sans-serif, bold, Arial, Helvetica;
+            font-size: 14px;
+        }
+
+        div {
+            box-sizing: border-box;
+            width: 100%;
+            border: 100px solid black;
+            float: left;
+            align-content: center;
+            align-items: center;
+
+        }
+
+        form {
+            margin: 0 auto;
+            width: 600px;
+            -webkit-text-fill-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center"> REGISTRATION FORM </h1>
+
+
+    <form action="insert" method="post" onsubmit="return validate()">
+        <p> Username:<input type="text" id="uid" placeholder="Enter user name here"><br></p>
+        <p>Password:<input type="password" id="pwd" placeholder="Enter password here"><br></p>
+        <p>Email:<input type="text" id="eid" placeholder="email id"><br></p>
+        <p> mobileNo:<input type="number" id="mob" placeholder="mobile no"><br></p>
+        <p>SELECT YOUR COURSE
+            <select type="text" value="" name="Subject">
+                <option>BTECH</option>
+                <option>BE</option>
+                <option>BCA</option>
+                <option>B.COM</option>
+                <option>BBA</option>
+            </select></p><br><br>
+        <p>Comments: <textarea cols="55" name="Comment">  </textarea></p>
+        <p><input type="submit" value="send" name="Submit">
+            <input type="reset" value="Reset" name="Reset">
+        </p>
+
+    </form>
+
+
+</body>
+
+</html>
