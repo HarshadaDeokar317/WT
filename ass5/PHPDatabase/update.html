@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Login page</title>
+<script language="javascript">
+</script>
+<link rel="stylesheet" href="styles.css">
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+
+
+
+<body>
+<h2>Create Account:</h2>
+
+<div class="loginBox">
+<img src="user.png" width="3" height="5" class="user"><br><br><br>
+
+<form name="frm" action="valid_update.php" method="post">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Full Name:</p>
+    <input type="text"name="fname" placeholder="e.g Patne Nikhil s." required>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Username:</p>
+    <input type="text"name="username" placeholder="Enter username....">
+<p>&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;Password:</p>
+    <input type="password"name="password" placeholder="Enter password....">
+
+ 
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Contact:</p>
+    <input type="text"name="contact" placeholder="Enter Mobile Number.......">
+<br>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Gender:<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Male:<input type="radio" name="gender" value="male"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Female:<input type="radio" name="gender" value="female">
+<br>
+<br>
+
+<select name="class">
+<option value="">--Select your Class here--</option>
+
+<option value="FE">FE</option>
+<option value="SE">SE</option>
+<option value="TE">TE</option>
+</select>
+
+
+<br><br>
+
+
+<textarea name="address" rows="4" cols="20" placeholder="Enter your Address here"></textarea><br>
+<br><br>
+<input type="submit"name="submit"value="UPDATE"onClick="return check()"><br>
+
+
+
+
+
+</form>
+</div>
+
+</body>
+</html>

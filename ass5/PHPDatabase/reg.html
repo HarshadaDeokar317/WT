@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<title>Registration Page</title>
+<link rel="stylesheet" href="styles.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h2>Create Account:</h2>
+
+<div class="loginBox">
+<img src="user.png" width="3" height="5" class="user"><br><br><br>
+
+<form name="frm" action="connect.php" method="POST">
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;First Name:</p>
+<input type="text"name="fname"/>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;username:</p>
+<input type="text"name="username">
+<p>&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;Password:</p>
+<input type="password"name="password" placeholder="Enter password....">
+
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;Contact:</p>
+<input type="text"name="contact" placeholder="Enter Mobile Number.......">
+<br>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Gender:<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Male:<input type="radio" name="gender" value="male"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Female:<input type="radio" name="gender" value="female">
+<br>
+<br>
+
+<select name="class">
+<option value="">--Select your Class here--</option>
+
+<option value="FE">FE</option>
+<option value="SE">SE</option>
+<option value="TE">TE</option>
+</select>
+
+
+<br><br>
+
+
+<textarea name="address" rows="4" cols="20" placeholder="Enter your Address here"></textarea><br>
+<br><br>
+<input type="submit"name="submit"value="Sign Up"><br>
+
+
+
+
+
+</form>
+</div>
+
+</body>
+</html>
